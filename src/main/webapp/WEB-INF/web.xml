@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	<display-name>BisManager</display-name>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>email</servlet-name>
+		<servlet-class>Controler.Email.Email_Verification</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>email</servlet-name>
+		<url-pattern>/verifiy</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>forgetPassword</servlet-name>
+		<jsp-file>/Views/forgetPassword.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>forgetPassword</servlet-name>
+		<url-pattern>/ResetPassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>homePage</servlet-name>
+		<jsp-file>/Views/index.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>homePage</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>viewClients</servlet-name>
+		<jsp-file>/Views/viewClient.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewClients</servlet-name>
+		<url-pattern>/ViewClients</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>addClient</servlet-name>
+		<jsp-file>/Views/addClient.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addClient</servlet-name>
+		<url-pattern>/addClient</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editClient</servlet-name>
+		<jsp-file>/Views/EditClient.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editClient</servlet-name>
+		<url-pattern>/editClient</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>viewFourni</servlet-name>
+		<jsp-file>/Views/viewFournisseur.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewFourni</servlet-name>
+		<url-pattern>/viewFournisseur</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>addFourni</servlet-name>
+		<jsp-file>/Views/addFournisseur.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addFourni</servlet-name>
+		<url-pattern>/addFournisseur</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editFourni</servlet-name>
+		<jsp-file>/Views/EditFournisseur.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editFourni</servlet-name>
+		<url-pattern>/editFournisseur</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>viewProd</servlet-name>
+		<jsp-file>/Views/viewProduit.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewProd</servlet-name>
+		<url-pattern>/viewProduit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>addProd</servlet-name>
+		<jsp-file>/Views/addProduit.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addProd</servlet-name>
+		<url-pattern>/addProduit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editProd</servlet-name>
+		<jsp-file>/Views/EditProduit.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editProd</servlet-name>
+		<url-pattern>/editProduit</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>addCmd</servlet-name>
+		<jsp-file>/Views/addCommande.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addCmd</servlet-name>
+		<url-pattern>/addCommande</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cmdDetails</servlet-name>
+		<jsp-file>/Views/CommandeDetails.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cmdDetails</servlet-name>
+		<url-pattern>/CommandeDetails</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editCmd</servlet-name>
+		<jsp-file>/Views/EditCommande.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editCmd</servlet-name>
+		<url-pattern>/editCommande</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>viewCmd</servlet-name>
+		<jsp-file>/Views/viewCommande.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewCmd</servlet-name>
+		<url-pattern>/viewCommande</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Facture</servlet-name>
+		<jsp-file>/Views/Facture.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Facture</servlet-name>
+		<url-pattern>/Facture</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>users</servlet-name>
+		<jsp-file>/Views/Utilisateurs.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>users</servlet-name>
+		<url-pattern>/Utilisateurs</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>infos</servlet-name>
+		<jsp-file>/Views/informations.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>infos</servlet-name>
+		<url-pattern>/informations</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>viewFact</servlet-name>
+		<jsp-file>/Views/viewFacture.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewFact</servlet-name>
+		<url-pattern>/viewFacture</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>achates</servlet-name>
+		<jsp-file>/Views/ProduitFourni.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>achates</servlet-name>
+		<url-pattern>/achatesDetails</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>editUser</servlet-name>
+		<jsp-file>/Views/EditUtilisateur.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editUser</servlet-name>
+		<url-pattern>/editUtilisateur</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/errorPages/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/errorPages/403.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/errorPages/500.jsp</location>
+	</error-page>
+</web-app>
